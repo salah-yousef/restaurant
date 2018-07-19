@@ -85,8 +85,14 @@ nav {
     list-style: none;
     background-color: #d6defb;
     font-size: 2px;
-    width: 100%;
     text-align: center;
+    @media screen and (min-width: 750px) {
+        width: 39.6%;
+    }
+    @media screen and (min-width: 1020px) {
+        width: 43.7%;
+    }
+
   li {
     display: inline;
     + li:before {
@@ -376,6 +382,9 @@ nav {
         height: 300px;
         width: 100vw;
     }
+    @media screen and (min-width: 550px){
+        height: 92.5%;
+    }
   }
   #map {
     background-color: #ccc;
@@ -434,6 +443,9 @@ nav {
   @media screen and (max-width: 550px) {
       width: 77.5%;
   }
+  @media screen and (min-width: 550px) {
+      width: 43.7%;
+  }
 }
 
 #reviews-container {
@@ -445,6 +457,9 @@ nav {
   background-color: #86D3FF; 
   @media screen and (max-width: 550px) {
     width: 77.5%;
+}
+  @media screen and (min-width: 550px) {
+    width: 43.7%;
 }
   h2 {
     color: #f58500;
