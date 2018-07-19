@@ -55,7 +55,7 @@ self.addEventListener('fetch', (event) => {
           }
           var fetchRequest = event.request.clone();
           return fetch(fetchRequest).then(function (response){
-            if (!response || response.status !== 200 || response.type !== 'basic') {
+            if (!response || response.status !== 200 ) {
               return response;
             }
             var responseToChache = response.clone();
